@@ -1,0 +1,3 @@
+<launch>
+ 	<node name="imu_raw_data_publisher" pkg="onoma" type="imu_data_publisher.py" output="screen"/>
+</launch>
