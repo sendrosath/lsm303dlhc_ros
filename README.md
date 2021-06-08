@@ -65,14 +65,19 @@ $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/sendrosath/lsm303dlhc_ros
 ```
-Install catkin dependencies (if you haven't already)
+Install catkin dependencies (if you haven't already):
 ```
 sudo pip3 install catkin_pkg
 ```
-Build Workspace with Python 3
+Build Workspace with Python 3:
 ```
 $ cd ~/catkin_ws
 $ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+```
+Make sure your files are executables:
+```
+$ chmod +x src/lsm303dlhc_ros/launch/imu_publisher.launch
+$ chmod +x src/lsm303dlhc_ros/scripts/imu_data_publisher.py 
 ```
 > **Note** This will configure catkin_make with Python 3. You may then proceed to use just catkin_make for subsequent builds.
 
