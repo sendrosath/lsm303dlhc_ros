@@ -46,7 +46,7 @@ $ sudo pip3 install adafruit-circuitpython-lsm303dlh-mag
 You can find more about the LSM303 python libraries [here](https://learn.adafruit.com/lsm303-accelerometer-slash-compass-breakout/python-circuitpython)
 
 ## Check if your IMU is recognised by your GPIO
-As mentioned earlier the pins on the IMU mean that the I2C connection is managed by the Bus 8
+As mentioned earlier the pins we used mean that the I2C connection is managed by the Bus 8.
 
 To check if your IMU is sending and receiving data you run:
 ```
