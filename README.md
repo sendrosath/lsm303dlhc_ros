@@ -15,7 +15,7 @@ At first I had some problems connecting the IMU to the Jetson AGX Xavier so afte
    
    * **SCL** - Pin 5 *(I2C_GP5_CLK, I2C Bus 8)*
 
-You can use [this guide](https://www.jetsonhacks.com/nvidia-jetson-agx-xavier-gpio-header-pinout/) to better understand the GPIO pinout. 
+You can use [this guide](https://www.jetsonhacks.com/nvidia-jetson-agx-xavier-gpio-header-pinout/) to better understand the GPIO pinout of the Jetson AGX Xavier. 
    
 ## Dependencies
 
@@ -95,6 +95,7 @@ roslaunch lsm303dlhc_ros imu_publisher.launch
 ![image](https://user-images.githubusercontent.com/58865448/121135712-72d42c80-c83d-11eb-94f6-ad659d233972.png)
 
 ## References
-1. Adafruit CircuitPython Library - https://github.com/adafruit/Adafruit_CircuitPython_LSM9DS1
-2. Configuring ROS Environment with Python 3 - http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-3. OOyindamola's lsm9ds1_ros_python - https://github.com/OOyindamola/lsm9ds1_ros_python
+1. Jetson AGX Xavier GPIO Pinout - https://www.jetsonhacks.com/nvidia-jetson-agx-xavier-gpio-header-pinout/
+2. Adafruit CircuitPython Library - https://github.com/adafruit/Adafruit_CircuitPython_LSM9DS1
+3. Configuring ROS Environment with Python 3 - http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+4. OOyindamola's lsm9ds1_ros_python - https://github.com/OOyindamola/lsm9ds1_ros_python
