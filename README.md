@@ -1,4 +1,4 @@
-# lsm303dhlc_ros
+# lsm303dlhc_ros
 A  ROS Wrapper for Adafruit LSM303DLHC IMU 
 
 ## Introduction
@@ -53,7 +53,7 @@ Create a catkin workspace and clone lsm303dlhc_ros:
 ```
 $ mkdir -p ~/catkin_ws/src
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/sendrosath/lsm303dhlc_ros
+$ git clone https://github.com/sendrosath/lsm303dlhc_ros
 ```
 Install catkin dependencies (if you haven't already)
 ```
@@ -66,9 +66,7 @@ $ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
 > **Note** This will configure catkin_make with Python 3. You may then proceed to use just catkin_make for subsequent builds.
 
-**Warning** Before you catkin_make make sure you have the LSM303DHLC module. Otherwise you gonna need to make the following changes on [scripts/imu_data_publisher.py](scripts/imu_data_publisher.py).
-
-For LSM303AGR you need to make the following changes:
+**Warning** Before you catkin_make make sure you have the LSM303DLHC module. Otherwise, if you have LSM303AGR you gonna need to make the following changes on [scripts/imu_data_publisher.py](scripts/imu_data_publisher.py):
 
 * on line 4:
 ```
@@ -81,7 +79,7 @@ mag = adafruit_lis2mdl.LIS2MDL(i2c)
 ## Launch
 
 ```
-roslaunch lsm303dhlc_ros imu_publisher.launch
+roslaunch lsm303dlhc_ros imu_publisher.launch
 ```
 
 ## References
