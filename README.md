@@ -45,8 +45,18 @@ $ sudo pip3 install adafruit-circuitpython-lsm303dlh-mag
 ```
 You can find more about the LSM303 python libraries [here](https://learn.adafruit.com/lsm303-accelerometer-slash-compass-breakout/python-circuitpython)
 
-## Installation
+## Check if your IMU is recognised by your GPIO
+As mentioned earlier the pins on the IMU mean that the I2C connection is managed by the Bus 8
 
+To check if your IMU is sending and receiving data you run:
+```
+$ sudo i2cdetect -r -y 8
+```
+and you should be able to see something like the following:
+
+![image](https://user-images.githubusercontent.com/58865448/121136329-32c17980-c83e-11eb-957a-0094d72333f8.png)
+
+## Installation
 This package has been tested on ROS Melodic (Ubuntu 18.04) so Melodic is the only distro that I can vouch it is going to work. 
 
 Create a catkin workspace and clone lsm303dlhc_ros:
@@ -81,6 +91,8 @@ mag = adafruit_lis2mdl.LIS2MDL(i2c)
 ```
 roslaunch lsm303dlhc_ros imu_publisher.launch
 ```
+
+![image](https://user-images.githubusercontent.com/58865448/121135712-72d42c80-c83d-11eb-94f6-ad659d233972.png)
 
 ## References
 1. Adafruit CircuitPython Library - https://github.com/adafruit/Adafruit_CircuitPython_LSM9DS1
