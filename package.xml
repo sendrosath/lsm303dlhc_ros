@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>lsm303dhlc_ros</name>
+  <name>lsm303dlhc_ros</name>
   <version>1.0.0</version>
   <description>A very helpful LSM303 ROS Wrapper package</description>
 
