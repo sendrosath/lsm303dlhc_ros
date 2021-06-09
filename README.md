@@ -1,4 +1,4 @@
-# lsm303dlhc_ros
+# ROS Support for LSM303 IMU
 A  ROS Wrapper for Adafruit LSM303DLHC IMU 
 
 ## Introduction
